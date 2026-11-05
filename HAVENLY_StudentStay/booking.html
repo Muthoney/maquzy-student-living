@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Enquiry | HAVENLY</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">HAVENLY<span>.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="environment.html">Accommodation</a>
+    </nav>
+  </header>
+
+  <main class="page form-page">
+    <a class="back-link" id="back-to-residence" href="environment.html">
+      ← Back to residence
+    </a>
+
+    <p class="eyebrow">NEXT STEP</p>
+    <h1>Send an accommodation enquiry</h1>
+    <p class="muted" id="booking-residence-name"></p>
+
+    <form id="booking-form" class="booking-form">
+      <label for="student-name">Your full name</label>
+      <input id="student-name" name="studentName" required>
+
+      <label for="student-email">Email address</label>
+      <input id="student-email" name="email" type="email" required>
+
+      <label for="student-phone">Phone number</label>
+      <input id="student-phone" name="phone" type="tel" required>
+
+      <label for="move-date">Expected move-in date</label>
+      <input id="move-date" name="moveDate" type="date" required>
+
+      <label for="message">Additional message</label>
+      <textarea id="message" name="message" rows="4"
+        placeholder="Any questions or details you'd like to share?"></textarea>
+
+      <button class="btn" type="submit">Submit enquiry</button>
+      <p id="form-feedback" role="status"></p>
+    </form>
+  </main>
+
+  <footer>© 2026 HAVENLY Student Living. Demo website.</footer>
+</body>
+</html>
